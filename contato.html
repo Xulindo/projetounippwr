@@ -1,40 +1,38 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
   <title>Contato - Equipe</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/pages/contato.css" rel="stylesheet">
 </head>
 <body>
-<header id="header" class="page-contato">
-  <div class="container">
-    <div class="row">
-      <div class="col col-desktop-3 col-6">
-        <a href="index.html">
-          <img src="images/logo.png">
+<header id="header" class="page-contato"> <! --CABEÇALHO, o ID define as caracteristicas diretamente pro cabeçalho e a classe para a página completa -->
+  <div class="container"> <! -- Centraliza a coluna na pagina. -->
+    <div class="row"> <! -- Cria uma divisão na página -->
+      <div class="col col-desktop-3 col-6">  <! -- Seta as configurações da divisão,como largura  -->
+        
+          <img src="images/logo.png"> <! -- Chama a logo da unip -->
         </a>
-      </div>
-      <div class="col col-desktop-9 col-6">
-        <nav>
-          <ul>
-           <li><a href="agua.html">A Àgua</a></li>
+      </div> <! -- Fecha a divisão. -->
+     
+        <nav> <! -- Cria um menu de navegação -->
+          <ul> <! -- Cria uma lista -->
+           <li><a href="agua.html">A Àgua</a></li> <! -- Cria um item da lista. -->
             <li><a href="poluicao.html">Poluição</a></li>
            <li><a href="contato.html">Contato</a></li>
           </ul>
         </nav>
       </div>
     </div>
-    <div class="row">
-      <div class="col col-desktop-12 title">
-        <h1>Contato Equipe - 1SEMESTRE</h1>
+    <div class="row"> <! -- Cria uma divisão, na mesma classe da anterior para facilitar o disgn -->
+      <div class="col col-desktop-12 title"> 
+        <h1>Contato Equipe - 1SEMESTRE</h1><! -- Abre um texto com a letra de titulo ( Maior ) -->
       </div>
     </div>
   </div>
-</header>
+</header> <! -- Fechao cabeçalho. -->
 <main>
   <section class="section section-center">
     <center> <h2>Contato direto com os membros</h2> </center>
@@ -86,8 +84,8 @@
   <div class="container">
     <div class="row">
       <div class="col col-offset-desktop-1 col-desktop-3">
-        <p><a href=""><img src="images/logo.png" alt="Logo da Chatschool"></a></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fringilla mollis erat, vitae pulvinar nisi laoreet eget. Curabitur at arcu mi. Cras vitae pharetra mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed id felis leo. Maecenas est est, vulputate at congue non, pulvinar eu arcu.</p>
+        <p><a href=""><img src="images/logo.png"></a></p>
+        <p>Trabalho PWR, para o primeiro semestre do cursos Sistemas da informação</p>
       </div>
       <div class="col col-offset-desktop-1 col-desktop-2 col-2">
         <h3>Menu</h3>
@@ -111,26 +109,7 @@
 <div id="copyright">
   &copy; Xulindo, Leonel, Leo, Brunão e Diogo da Massa - 2022 - Todos os direitos reservados
 </div>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script>
-  $('form').submit(function (event) {
-    event.preventDefault();
-    $('form input[type="submit"]').val('Aguarde...')
-        .attr('disabled', true);
-    $.ajax({
-      type: $('form').attr('method'),
-      url: $('form').attr('action'),
-      data: $('form').serialize(),
-      success: function () {
-        alert('Email enviado com sucesso');
-        $('form').trigger('reset');
 
-        $('form input[type="submit"]').val('Enviar')
-        .attr('disabled', false);
-      }
-    });
-  });
-</script>
 
 </body>
 </html>
